@@ -51,7 +51,7 @@ Now write this:
 
 Why is the value 'interesting?' Because the second post has many tags and its first tag's value is 'interesting.'
 
-Now assign variables to the first and second tags.
+Now assign variables to the first and second tags:
 
 `first_tag = Tag.first`
 
@@ -73,7 +73,7 @@ What does it return? The first post record associated with this tag (may or may 
 
 What does it return? The value of the body field of that tag's post.
 
-Now let's try to find the collection of tags records that has the name value equal to 'boring.'
+Now let's try to find the collection of tags records that has the name value equal to 'boring':
 
 `boring_tag = Tag.where(name: 'boring')`
 
@@ -93,7 +93,20 @@ Write this in the console on 3 separate lines:
 
 This should print the value of the body tag of each post in the collection (there is only one in this case).
 
+Contrast this to:
+
+`third_tag = Tag.find(3)`
+
+This will not return a collection. This returns one record (the record with the id of 3).
+
+Now we can write:
+
+`third_tag.posts`
+
+This will return all posts that are associated with this tag.
+
 Try more!
+
 
 
 
