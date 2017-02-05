@@ -1,6 +1,6 @@
 ## Directions
 
-Download the repository.
+Clone or download the repository.
 
 Go to the appropriate directory using your terminal.
 
@@ -8,7 +8,7 @@ In the terminal:
 
 `bundle`
 
-`rails db:create
+`rails db:create`
 
 `rails db:migrate`
 
@@ -33,15 +33,15 @@ In your project, refer to the app/models folder. The assocations have been writt
 
 In the console:
 
-`post.tags`
+`first_post.tags`
 
 This return a collection of tags.
 
-`post.tags[0]`
+`first_post.tags[0]`
 
 This returns the first tag associated with this post. A post has many tags, and this is the value of the first tag.
 
-`post.tags[0].name`
+`first_post.tags[0].name`
 
 This returns "funny," which is the value of the name field.
 
