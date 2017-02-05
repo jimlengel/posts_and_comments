@@ -105,8 +105,13 @@ Now we can write:
 
 This will return all posts that are associated with this tag.
 
-Try more!
+Try more ActiveRecord queries. Don't forget that you can use 'where' to find records.
 
+Try this:
+
+`old_posts = Post.where("created_at > ?", 1.hours.ago)`
+
+Keep experimenting!
 
 
 
