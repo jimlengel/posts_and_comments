@@ -22,8 +22,8 @@ rails console
 
 In the console, create two variable for the first and second posts:
 
-```first_post = Post.first
-second_post = Post.second```
+`first_post = Post.first`
+`second_post = Post.second`
 
 In your project, refer to the app/models folder. The assocations have been written for you. Go to post.rb. You can see that a post has_many tags (the second has_many).
 
