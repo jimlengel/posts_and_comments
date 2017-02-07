@@ -85,11 +85,13 @@ Since boring_tags is a collection (because of '.where', we have to use the first
 
 Write this in the console on 3 separate lines:
 
-`boring_tag.first.posts.each do |post|`
+```ruby
+boring_tag.first.posts.each do |post|
 
-`p post.body`
+   p post.body
 
-`end`
+end
+```
 
 This should print the value of the body tag of each post in the collection (there is only one in this case).
 
@@ -109,7 +111,7 @@ Try more ActiveRecord queries. Don't forget that you can use 'where' to find rec
 
 Try this:
 
-`old_posts = Post.where("created_at > ?", 1.hours.ago)`
+`old_posts = Post.where("created_at > ?", 1.hour.ago)`
 
 Keep experimenting!
 
